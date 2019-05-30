@@ -9,6 +9,9 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import SDWebImage
+
+
 
 class IniciarSesionViewController: UIViewController {
 
@@ -50,6 +53,12 @@ class IniciarSesionViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+
+        
+    }
+
 
 
 }

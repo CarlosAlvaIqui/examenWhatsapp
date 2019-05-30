@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import SDWebImage
 
 class ListaUsuariosViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
@@ -27,23 +28,28 @@ class ListaUsuariosViewController: UIViewController,UITableViewDataSource,UITabl
         let cell = UITableViewCell()
         let usuario = usuarios[indexPath.row]
         cell.textLabel?.text = usuario.email
+        cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
         return cell
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         listaUsuarios.delegate = self
         listaUsuarios.dataSource = self
         
         Database.database().reference().child("usuarios").observe(DataEventType.childAdded, with: {(snapshot) in
-            print(snapshot)
+            print(" gaaa \(snapshot)")
+            let usuario = Usuario()
+            usuario.email = (snapshot.value as! NSDictionary)["email"] as! String
+            usuario.uid = snapshot.key
+            usuario.photoURL = (snapshot.value as! NSDictionary)["photoURL"] as! String
+            
+            self.usuarios.append(usuario)
+            self.listaUsuarios.reloadData()
+
         })
-        /*
-        let usuario = Usuario()
-    usuario.email = (snapshot.value as! NSDictionary)["email"] as! String
-        usuario.uid = snapshot.key
-        self.usuarios.append(usuario)
-        self.listaUsuarios.roloadData()
-        // Do any additional setup after loading the view.*/
+        
+
     }
     
 

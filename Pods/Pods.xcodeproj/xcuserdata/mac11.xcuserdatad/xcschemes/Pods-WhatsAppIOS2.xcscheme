@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF23D0F2CDE6A3F18D4E8B0D3F91EE4D"
+               BlueprintIdentifier = "B6641632759F0C49D0D0BB228F313183"
                BuildableName = "Pods_WhatsAppIOS2.framework"
                BlueprintName = "Pods-WhatsAppIOS2"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AF23D0F2CDE6A3F18D4E8B0D3F91EE4D"
+            BlueprintIdentifier = "B6641632759F0C49D0D0BB228F313183"
             BuildableName = "Pods_WhatsAppIOS2.framework"
             BlueprintName = "Pods-WhatsAppIOS2"
             ReferencedContainer = "container:Pods.xcodeproj">

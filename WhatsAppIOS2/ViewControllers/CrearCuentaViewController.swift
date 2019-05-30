@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+
 class CrearCuentaViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     @IBOutlet weak var btnusuario: UITextField!
     @IBOutlet weak var btnpassword: UITextField!
@@ -114,5 +115,6 @@ class CrearCuentaViewController: UIViewController,UIImagePickerControllerDelegat
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
