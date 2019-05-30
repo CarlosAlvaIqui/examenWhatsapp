@@ -17,6 +17,7 @@
 		38AFDE6B229F2638001436E0 /* CrearCuentaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFDE6A229F2638001436E0 /* CrearCuentaViewController.swift */; };
 		38AFDE6E229F3A27001436E0 /* listasMensajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFDE6D229F3A27001436E0 /* listasMensajeViewController.swift */; };
 		38AFDE70229F3A3E001436E0 /* listasImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFDE6F229F3A3E001436E0 /* listasImagenViewController.swift */; };
+		38AFDE74229F5AEB001436E0 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFDE73229F5AEB001436E0 /* Usuario.swift */; };
 		C091B18128F5C7679A0FFAD0 /* Pods_WhatsAppIOS2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298DF0CF26B16437053DD773 /* Pods_WhatsAppIOS2.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		38AFDE6C229F36CA001436E0 /* WhatsAppIOS2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatsAppIOS2.entitlements; sourceTree = "<group>"; };
 		38AFDE6D229F3A27001436E0 /* listasMensajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listasMensajeViewController.swift; sourceTree = "<group>"; };
 		38AFDE6F229F3A3E001436E0 /* listasImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listasImagenViewController.swift; sourceTree = "<group>"; };
+		38AFDE73229F5AEB001436E0 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		38AFDE72229F581C001436E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				38AFDE73229F5AEB001436E0 /* Usuario.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				38AFDE6E229F3A27001436E0 /* listasMensajeViewController.swift in Sources */,
 				38AFDE69229F229D001436E0 /* ListaUsuariosViewController.swift in Sources */,
+				38AFDE74229F5AEB001436E0 /* Usuario.swift in Sources */,
 				38AFDE70229F3A3E001436E0 /* listasImagenViewController.swift in Sources */,
 				38AFDE57229F15E6001436E0 /* IniciarSesionViewController.swift in Sources */,
 				38AFDE6B229F2638001436E0 /* CrearCuentaViewController.swift in Sources */,

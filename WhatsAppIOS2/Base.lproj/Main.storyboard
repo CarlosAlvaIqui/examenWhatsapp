@@ -260,6 +260,9 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="listaUsuarios" destination="dp9-QR-tbc" id="GRC-aP-VeT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FgO-v2-dbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
