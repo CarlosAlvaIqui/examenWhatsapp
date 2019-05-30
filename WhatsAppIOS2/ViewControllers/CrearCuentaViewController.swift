@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+
 class CrearCuentaViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     @IBOutlet weak var btnusuario: UITextField!
     @IBOutlet weak var btnpassword: UITextField!
@@ -17,6 +18,7 @@ class CrearCuentaViewController: UIViewController,UIImagePickerControllerDelegat
     
     var imagePicker = UIImagePickerController()
     var imagenID = NSUUID().uuidString
+    
     
     @IBAction func btncancelar(_ sender: Any) {
         
@@ -95,6 +97,7 @@ class CrearCuentaViewController: UIViewController,UIImagePickerControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     

@@ -49,13 +49,13 @@ class EnviarMensajitoViewController: UIViewController {
         let seconds = calendar.component(.second, from: date)
         let horatotal:String = "\(hour):\(minutes):\(seconds)"
         
-        let snap = ["from" : Auth.auth().currentUser?.email ,"mensajes" : txtMensaje.text!, "Fecha" : result, "Hora" : horatotal]
+        let snap = ["from" : Auth.auth().currentUser?.email ,"mensajes" : txtMensaje.text!, "Fecha" : result, "Hora" : horatotal, "imagenes" : ""]
        
         Database.database().reference().child("usuarios").child(dat_user.uid).child("snaps").childByAutoId().setValue(snap)
         
         print("6")
        
-        self.performSegue(withIdentifier: "segueregresar", sender: nil)
+        self.performSegue(withIdentifier: "segueregresars", sender: nil)
     }
     /*
     // MARK: - Navigation

@@ -14,7 +14,7 @@ import SDWebImage
 
 
 class IniciarSesionViewController: UIViewController {
-
+   
 
     @IBAction func btnseguecrearcuenta(_ sender: Any) {
         performSegue(withIdentifier: "seguecrearusuario", sender: nil)
@@ -22,6 +22,7 @@ class IniciarSesionViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+   
     @IBAction func iniciarSesionTapped(_ sender: Any) {
         
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!){ (user, error) in
@@ -52,11 +53,6 @@ class IniciarSesionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      
-
-        
     }
 
 

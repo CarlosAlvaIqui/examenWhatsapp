@@ -13,6 +13,7 @@
         <!--Iniciar Sesion View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="IniciarSesionViewController" customModule="WhatsAppIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -105,13 +106,13 @@
                         <segue destination="UN3-MY-61m" kind="show" identifier="seguecrearusuario" id="Wpi-y9-QPR"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162" y="-31"/>
+            <point key="canvasLocation" x="-598" y="271"/>
         </scene>
         <!--Crear Cuenta View Controller-->
         <scene sceneID="iaI-db-zwZ">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdD-N6-8CF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="UN3-MY-61m" customClass="CrearCuentaViewController" customModule="WhatsAppIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xd-sb-Il6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -211,24 +212,23 @@
                         <outlet property="btnpassword" destination="Lfz-Zl-Dui" id="Qhe-wD-O5r"/>
                         <outlet property="btnusuario" destination="8C8-Qq-oV0" id="jMJ-oV-f2U"/>
                         <outlet property="imageView" destination="OiL-eH-8zx" id="IW9-GY-X8C"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueregresar" id="apC-Ek-PRg"/>
                         <segue destination="nAd-Sz-Tyr" kind="presentation" identifier="seguesecreousuario" id="aao-OF-gif"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mdD-N6-8CF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="616.79999999999995" y="359.37031484257875"/>
+            <point key="canvasLocation" x="713" y="292"/>
         </scene>
         <!--Lista Usuarios View Controller-->
         <scene sceneID="xcM-jG-IUk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FgO-v2-dbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Mai-wZ-u6R" customClass="ListaUsuariosViewController" customModule="WhatsAppIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mec-0B-zVJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dp9-QR-tbc">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -262,22 +262,69 @@
                     </navigationItem>
                     <connections>
                         <outlet property="listaUsuarios" destination="dp9-QR-tbc" id="GRC-aP-VeT"/>
+                        <segue destination="F8J-qb-zOy" kind="show" identifier="seguesnapero" id="ojH-Jy-Jzv"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FgO-v2-dbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1375" y="-533"/>
+            <point key="canvasLocation" x="1310" y="-144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Phr-yh-g36">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPN-b2-TaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="fF7-bm-i9h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xd2-Eh-aAB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jGK-15-lWY"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1368" y="-2045"/>
+        </scene>
+        <!--Mensajese Imagenes View Controller-->
+        <scene sceneID="lmk-X8-Yu9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xW3-vk-Y8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="F8J-qb-zOy" customClass="MensajeseImagenesViewController" customModule="WhatsAppIOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7SY-wR-j7M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="140-0d-Pf7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="140-0d-Pf7" firstAttribute="leading" secondItem="xKN-Se-2Fj" secondAttribute="leading" id="4HS-Bu-Pbg"/>
+                            <constraint firstItem="140-0d-Pf7" firstAttribute="top" secondItem="xKN-Se-2Fj" secondAttribute="top" id="Be2-l0-fdW"/>
+                            <constraint firstItem="xKN-Se-2Fj" firstAttribute="bottom" secondItem="140-0d-Pf7" secondAttribute="bottom" id="HTt-RD-Lah"/>
+                            <constraint firstItem="xKN-Se-2Fj" firstAttribute="trailing" secondItem="140-0d-Pf7" secondAttribute="trailing" id="cI9-hN-ggo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xKN-Se-2Fj"/>
+                    </view>
+                    <connections>
+                        <outlet property="tablaSnaps" destination="140-0d-Pf7" id="RhS-2I-NjW"/>
+                        <segue destination="fF7-bm-i9h" kind="show" id="bX4-p6-Er6"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1374" y="-1361"/>
         </scene>
         <!--Listas Mensaje View Controller-->
         <scene sceneID="Muf-F9-MSk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksO-ed-kE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="RhN-eO-W8y" customClass="listasMensajeViewController" customModule="WhatsAppIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fq2-Yi-00R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YW0-Al-Aet">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -295,32 +342,32 @@
                         <segue destination="P6p-SD-wB6" kind="show" identifier="seguemensaje" id="XJg-qu-m3a"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ksO-ed-kE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2348" y="-815"/>
         </scene>
         <!--Enviar Mensajito View Controller-->
         <scene sceneID="qBE-mN-5a9">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPM-0X-DA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="P6p-SD-wB6" customClass="EnviarMensajitoViewController" customModule="WhatsAppIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5wp-Pj-oUJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYP-WQ-WNk">
-                                <rect key="frame" x="165" y="75" width="45" height="21"/>
+                                <rect key="frame" x="165" y="119" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese el mensaje que desee Enviar :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHl-3x-qV7">
-                                <rect key="frame" x="44" y="122" width="287" height="21"/>
+                                <rect key="frame" x="44" y="166" width="287" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Ingrese su texto Aqui" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lhz-iM-kx3">
-                                <rect key="frame" x="40" y="183" width="295" height="300"/>
+                                <rect key="frame" x="40" y="227" width="295" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="yhy-XU-0ff"/>
                                 </constraints>
@@ -329,7 +376,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkL-rH-wkn">
-                                <rect key="frame" x="136" y="513" width="103" height="30"/>
+                                <rect key="frame" x="136" y="557" width="103" height="30"/>
                                 <state key="normal" title="Enviar Mensaje"/>
                                 <connections>
                                     <action selector="EnviarMensajeTapped:" destination="P6p-SD-wB6" eventType="touchUpInside" id="cPT-WG-57s"/>
@@ -353,16 +400,15 @@
                     </view>
                     <connections>
                         <outlet property="txtMensaje" destination="Lhz-iM-kx3" id="afA-SO-ttC"/>
-                        <segue destination="Mai-wZ-u6R" kind="show" identifier="segueregresar" id="VXH-pI-Maf"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LPM-0X-DA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3233" y="-815"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cwD-j2-UhP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNG-0P-Ngf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nAd-Sz-Tyr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I7T-E8-DND">
@@ -374,20 +420,20 @@
                         <segue destination="Mai-wZ-u6R" kind="relationship" relationship="rootViewController" id="TkX-lu-F0s"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wNG-0P-Ngf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="618" y="-532"/>
+            <point key="canvasLocation" x="166" y="-564"/>
         </scene>
         <!--Listas Imagen View Controller-->
         <scene sceneID="gA4-KF-3HC">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1w-Z3-v6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="axm-IQ-FkM" customClass="listasImagenViewController" customModule="WhatsAppIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="640-ah-bp8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5zR-mu-mux">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -405,26 +451,26 @@
                         <segue destination="Ymx-Wr-3Vy" kind="show" identifier="segueimagen" id="1rM-2u-vO6"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h1w-Z3-v6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2348" y="-92"/>
         </scene>
         <!--Enviar Imagencita View Controller-->
         <scene sceneID="Ivz-aT-ilO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHh-Nh-JyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ymx-Wr-3Vy" customClass="EnviarImagencitaViewController" customModule="WhatsAppIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FP4-Ix-aBd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fotos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtO-nD-pzP">
-                                <rect key="frame" x="166" y="70" width="43" height="20.5"/>
+                                <rect key="frame" x="166" y="114" width="43" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZI-tc-L2c">
-                                <rect key="frame" x="70.5" y="120.5" width="234" height="30"/>
+                                <rect key="frame" x="70.5" y="164.5" width="234" height="30"/>
                                 <state key="normal" title="Escojer Boton de galeria o camara"/>
                                 <connections>
                                     <action selector="btnChooseImage:" destination="Ymx-Wr-3Vy" eventType="touchUpInside" id="4Cw-PE-0mP"/>
@@ -455,16 +501,13 @@
                     </view>
                     <connections>
                         <outlet property="ImagenViews" destination="tdj-um-uCi" id="Mvz-Md-vnM"/>
-                        <segue destination="Mai-wZ-u6R" kind="show" identifier="segueregresar2" id="s6a-aj-Xbd"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hHh-Nh-JyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3232.8000000000002" y="-92.203898050974516"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DQS-8M-I1a"/>
-        <segue reference="s6a-aj-Xbd"/>
+        <segue reference="aao-OF-gif"/>
     </inferredMetricsTieBreakers>
 </document>

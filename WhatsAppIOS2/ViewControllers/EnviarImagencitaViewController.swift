@@ -33,6 +33,18 @@ class EnviarImagencitaViewController: UIViewController,UIImagePickerControllerDe
         
         let cargarImagen = imagenesFolder.child("\(imagenID).jpg")
         
+        
+        let date = Date()
+        let calendar = Calendar.current
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        let result = formatter.string(from: date)
+        
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        let horatotal:String = "\(hour):\(minutes):\(seconds)"
+        
         cargarImagen.putData(imagenData!, metadata: nil) {
             (metadata, error) in
             if error != nil {
@@ -43,7 +55,7 @@ class EnviarImagencitaViewController: UIViewController,UIImagePickerControllerDe
                         print("Ocurrio un error al obtener informacion de imagen  \(error)  ")
                         return
                     }
-                    let snap = ["from" : Auth.auth().currentUser?.email  ,"imagenes" : url?.absoluteString]
+                    let snap = ["from" : Auth.auth().currentUser?.email  ,"imagenes" : url?.absoluteString, "Fecha" : result, "Hora" : horatotal, "mensajes" : "" ]
                     Database.database().reference().child("usuarios").child(self.dat_user.uid).child("snaps").childByAutoId().setValue(snap)
                     self.performSegue(withIdentifier: "segueregresar2", sender: nil)
 

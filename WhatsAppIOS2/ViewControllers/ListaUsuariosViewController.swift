@@ -31,6 +31,11 @@ class ListaUsuariosViewController: UIViewController,UITableViewDataSource,UITabl
         cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       let aya = usuarios[indexPath.row]
+        performSegue(withIdentifier: "seguesnapero", sender: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
