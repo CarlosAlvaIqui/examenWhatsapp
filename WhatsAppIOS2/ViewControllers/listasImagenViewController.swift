@@ -25,8 +25,17 @@ class listasImagenViewController: UIViewController,UITableViewDataSource,UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let usuario = usuarios[indexPath.row]
-        cell.textLabel?.text = usuario.email
-        cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
+        let usuarioactual = ((Auth.auth().currentUser?.email)!)
+        if usuarioactual == usuario.email {
+            usuarios.remove(at: indexPath.row)
+            listaimagen.deleteRows(at: [indexPath], with: .fade)
+            cell.textLabel?.text = usuario.email
+            cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
+            self.listaimagen.reloadData()
+        }else{
+            cell.textLabel?.text = usuario.email
+            cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

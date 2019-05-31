@@ -41,7 +41,7 @@ class EnviarMensajitoViewController: UIViewController {
         let date = Date()
         let calendar = Calendar.current
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd.MM.yyyy"
+        formatter.dateFormat = "dd/MM/yyyy"
         let result = formatter.string(from: date)
         
         let hour = calendar.component(.hour, from: date)
@@ -49,13 +49,14 @@ class EnviarMensajitoViewController: UIViewController {
         let seconds = calendar.component(.second, from: date)
         let horatotal:String = "\(hour):\(minutes):\(seconds)"
         
-        let snap = ["from" : Auth.auth().currentUser?.email ,"mensajes" : txtMensaje.text!, "Fecha" : result, "Hora" : horatotal, "imagenes" : ""]
+        let snap = ["from" : Auth.auth().currentUser?.email ,"mensajes" : txtMensaje.text!, "Fecha" : result, "Hora" : horatotal, "imagenes" : "", "imagenID" : "", "visto" : "true"]
        
         Database.database().reference().child("usuarios").child(dat_user.uid).child("snaps").childByAutoId().setValue(snap)
         
         print("6")
        
-        self.performSegue(withIdentifier: "segueregresars", sender: nil)
+        navigationController?.popViewController(animated: true)
+
     }
     /*
     // MARK: - Navigation

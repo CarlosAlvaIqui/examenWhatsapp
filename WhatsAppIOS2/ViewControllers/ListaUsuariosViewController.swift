@@ -27,8 +27,20 @@ class ListaUsuariosViewController: UIViewController,UITableViewDataSource,UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let usuario = usuarios[indexPath.row]
-        cell.textLabel?.text = usuario.email
-        cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
+        let usuarioactual = ((Auth.auth().currentUser?.email)!)
+//        cell.textLabel?.text = usuario.email
+//        cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
+
+        if usuarioactual == usuario.email {
+            usuarios.remove(at: indexPath.row)
+            listaUsuarios.deleteRows(at: [indexPath], with: .fade)
+            cell.textLabel?.text = usuario.email
+            cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
+            self.listaUsuarios.reloadData()
+        }else{
+            cell.textLabel?.text = usuario.email
+            cell.imageView?.sd_setImage(with: URL(string: usuario.photoURL), completed: nil)
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

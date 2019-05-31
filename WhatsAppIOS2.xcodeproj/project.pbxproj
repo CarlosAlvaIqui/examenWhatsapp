@@ -18,6 +18,7 @@
 		38AFDE6E229F3A27001436E0 /* listasMensajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFDE6D229F3A27001436E0 /* listasMensajeViewController.swift */; };
 		38AFDE70229F3A3E001436E0 /* listasImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFDE6F229F3A3E001436E0 /* listasImagenViewController.swift */; };
 		38AFDE74229F5AEB001436E0 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFDE73229F5AEB001436E0 /* Usuario.swift */; };
+		38F4DD0222A1932B00D397AE /* VerImagenyMensajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4DD0122A1932B00D397AE /* VerImagenyMensajeViewController.swift */; };
 		38FA7FD422A04C9E00434C27 /* EnviarMensajitoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA7FD322A04C9E00434C27 /* EnviarMensajitoViewController.swift */; };
 		38FA7FD622A04CB000434C27 /* EnviarImagencitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA7FD522A04CB000434C27 /* EnviarImagencitaViewController.swift */; };
 		38FA7FD822A0798700434C27 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA7FD722A0798700434C27 /* Snap.swift */; };
@@ -43,6 +44,7 @@
 		38AFDE6D229F3A27001436E0 /* listasMensajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listasMensajeViewController.swift; sourceTree = "<group>"; };
 		38AFDE6F229F3A3E001436E0 /* listasImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listasImagenViewController.swift; sourceTree = "<group>"; };
 		38AFDE73229F5AEB001436E0 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		38F4DD0122A1932B00D397AE /* VerImagenyMensajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerImagenyMensajeViewController.swift; sourceTree = "<group>"; };
 		38FA7FD322A04C9E00434C27 /* EnviarMensajitoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviarMensajitoViewController.swift; sourceTree = "<group>"; };
 		38FA7FD522A04CB000434C27 /* EnviarImagencitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviarImagencitaViewController.swift; sourceTree = "<group>"; };
 		38FA7FD722A0798700434C27 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				38AFDE68229F229D001436E0 /* ListaUsuariosViewController.swift */,
 				38AFDE56229F15E6001436E0 /* IniciarSesionViewController.swift */,
 				38FA7FD922A07F3A00434C27 /* MensajeseImagenesViewController.swift */,
+				38F4DD0122A1932B00D397AE /* VerImagenyMensajeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				38FA7FD422A04C9E00434C27 /* EnviarMensajitoViewController.swift in Sources */,
 				38AFDE57229F15E6001436E0 /* IniciarSesionViewController.swift in Sources */,
 				38AFDE6B229F2638001436E0 /* CrearCuentaViewController.swift in Sources */,
+				38F4DD0222A1932B00D397AE /* VerImagenyMensajeViewController.swift in Sources */,
 				38FA7FD622A04CB000434C27 /* EnviarImagencitaViewController.swift in Sources */,
 				38AFDE55229F15E6001436E0 /* AppDelegate.swift in Sources */,
 			);

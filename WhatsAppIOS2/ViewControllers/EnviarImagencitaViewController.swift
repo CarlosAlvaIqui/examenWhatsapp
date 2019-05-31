@@ -17,6 +17,7 @@ class EnviarImagencitaViewController: UIViewController,UIImagePickerControllerDe
     var imagenID = NSUUID().uuidString
     var dat_user = Usuario()
 
+    @IBOutlet weak var TXTMensaje: UITextField!
     @IBAction func btnChooseImage(_ sender: Any) {
         imagePicker.sourceType = .savedPhotosAlbum
         imagePicker.allowsEditing = false
@@ -55,10 +56,8 @@ class EnviarImagencitaViewController: UIViewController,UIImagePickerControllerDe
                         print("Ocurrio un error al obtener informacion de imagen  \(error)  ")
                         return
                     }
-                    let snap = ["from" : Auth.auth().currentUser?.email  ,"imagenes" : url?.absoluteString, "Fecha" : result, "Hora" : horatotal, "mensajes" : "" ]
+                    let snap = ["from" : Auth.auth().currentUser?.email  ,"imagenes" : url?.absoluteString, "Fecha" : result, "Hora" : horatotal, "mensajes" : self.TXTMensaje.text!, "imagenID" : self.imagenID, "visto" : "true"]
                     Database.database().reference().child("usuarios").child(self.dat_user.uid).child("snaps").childByAutoId().setValue(snap)
-                    self.performSegue(withIdentifier: "segueregresar2", sender: nil)
-
                     
                 }
                
@@ -66,7 +65,8 @@ class EnviarImagencitaViewController: UIViewController,UIImagePickerControllerDe
                 
             }
         }
-        
+        navigationController?.popViewController(animated: true)
+
         
         
         

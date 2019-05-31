@@ -8,7 +8,12 @@
 
 import Foundation
 class Snap {
-    var photoURL = ""
+    var imagenURL = ""
     var mensajes = ""
     var from = ""
+    var fecha = ""
+    var hora = ""
+    var id = ""
+    var imagenID = ""
+    var visto = ""
 }

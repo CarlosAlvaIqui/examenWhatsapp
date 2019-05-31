@@ -18,14 +18,15 @@ class CrearCuentaViewController: UIViewController,UIImagePickerControllerDelegat
     
     var imagePicker = UIImagePickerController()
     var imagenID = NSUUID().uuidString
-    
+    var almacenausuario = ""
+    var almacenacontra = ""
     
     @IBAction func btncancelar(_ sender: Any) {
         
         let alerta = UIAlertController(title: "Desea salir de la creacion de Usuario?", message: "No te vallas chavito", preferredStyle: .alert)
         
         let btnOK = UIAlertAction(title: "Ok", style: .default, handler: { (UIAlertAction) in
-            self.performSegue(withIdentifier: "segueregresar", sender: nil)
+           
         })
         
         let btncancel = UIAlertAction(title: "Cancelar", style: .cancel)
@@ -91,12 +92,16 @@ class CrearCuentaViewController: UIViewController,UIImagePickerControllerDelegat
     
     
     @IBAction func btnregresar(_ sender: Any) {
-        performSegue(withIdentifier: "segueregresar", sender: nil)
+        dismiss(animated: true, completion: nil)
+        
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        btnusuario.text! = almacenausuario
+        btnpassword.text! = almacenacontra
         
         // Do any additional setup after loading the view.
     }
